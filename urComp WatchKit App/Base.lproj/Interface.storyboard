@@ -1,0 +1,324 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="14313.18" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="AgC-eL-Hgc">
+    <device id="watch38" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="14238.10"/>
+    </dependencies>
+    <scenes>
+        <!--Interface Controller-->
+        <scene sceneID="aou-V4-d1y">
+            <objects>
+                <controller id="AgC-eL-Hgc" customClass="InterfaceController" customModule="urComp_WatchKit_App" customModuleProvider="target">
+                    <items>
+                        <group width="1" alignment="left" layout="vertical" id="MnE-f6-ads">
+                            <items>
+                                <group width="1" alignment="left" id="fw0-N6-30h">
+                                    <items>
+                                        <label alignment="left" text="Status" id="IUJ-jV-28J">
+                                            <fontDescription key="font" style="UICTFontTextStyleHeadline"/>
+                                        </label>
+                                        <label alignment="right" text="Updated" id="DcQ-NF-Xhn">
+                                            <color key="textColor" red="0.55634254220000001" green="0.97934550050000002" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <fontDescription key="font" style="UICTFontTextStyleHeadline"/>
+                                        </label>
+                                    </items>
+                                </group>
+                                <group width="1" alignment="left" layout="vertical" id="HKZ-ua-ybU">
+                                    <items>
+                                        <button width="1" height="20" alignment="left" title="Mindfulness" id="8Gc-Ef-Zey">
+                                            <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                            <color key="backgroundColor" red="0.084021218121051788" green="0.72070878744125366" blue="0.61130762100219727" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <fontDescription key="font" type="system" pointSize="17"/>
+                                            <connections>
+                                                <action selector="pushMindfulButton" destination="AgC-eL-Hgc" id="jQ0-IA-nkf"/>
+                                            </connections>
+                                        </button>
+                                        <label alignment="right" text="0 / 0 min" id="ZrF-xm-KAr">
+                                            <fontDescription key="font" type="system" pointSize="14"/>
+                                        </label>
+                                    </items>
+                                </group>
+                                <group width="1" alignment="left" layout="vertical" id="DnB-1p-YkS">
+                                    <items>
+                                        <button width="1" height="20" alignment="left" title="Exercise" id="rGy-wz-HbD">
+                                            <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                            <color key="backgroundColor" red="0.025999999999999999" green="0.97399999999999998" blue="0.014" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <fontDescription key="font" type="system" pointSize="17"/>
+                                            <connections>
+                                                <action selector="pushLightExButton" destination="AgC-eL-Hgc" id="8gF-hy-XXX"/>
+                                            </connections>
+                                        </button>
+                                        <label alignment="right" text="0 / 0 min" id="eHv-5B-KUc">
+                                            <fontDescription key="font" type="system" pointSize="14"/>
+                                        </label>
+                                    </items>
+                                </group>
+                                <group width="1" alignment="left" layout="vertical" id="fwl-q6-GgL">
+                                    <items>
+                                        <button width="1" height="20" alignment="left" title="Workout" id="8Et-eI-WGs">
+                                            <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                            <color key="backgroundColor" red="0.95299999999999996" green="0.55500000000000005" blue="0.094" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <fontDescription key="font" type="system" pointSize="17"/>
+                                            <connections>
+                                                <action selector="pushWorkoutButton" destination="AgC-eL-Hgc" id="FnA-sJ-6Ct"/>
+                                            </connections>
+                                        </button>
+                                        <label alignment="right" text="0 / 0 min" id="AQ1-a7-2jk">
+                                            <fontDescription key="font" type="system" pointSize="14"/>
+                                        </label>
+                                    </items>
+                                </group>
+                                <group width="1" alignment="left" layout="vertical" id="yiC-Ym-W3m">
+                                    <items>
+                                        <label alignment="left" text=" Settings" id="TcR-P1-fij"/>
+                                        <button width="1" height="20" alignment="left" title="Weights" id="0mm-xn-Efc">
+                                            <color key="backgroundColor" cocoaTouchSystemColor="scrollViewTexturedBackgroundColor"/>
+                                            <fontDescription key="font" type="system" pointSize="17"/>
+                                            <connections>
+                                                <action selector="pushWeightsButton" destination="AgC-eL-Hgc" id="jbC-50-XBd"/>
+                                            </connections>
+                                        </button>
+                                        <label alignment="right" text="4 : 2 : 4" id="184-ts-aG5">
+                                            <fontDescription key="font" type="system" pointSize="14"/>
+                                        </label>
+                                    </items>
+                                </group>
+                                <group width="1" alignment="left" layout="vertical" id="xD0-in-TpS">
+                                    <items>
+                                        <button width="1" height="20" alignment="left" title="Select Exercise" id="iob-8I-HPj">
+                                            <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                            <color key="backgroundColor" red="0.14871094646541366" green="0.65632931472081224" blue="0.040490012901910594" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <fontDescription key="font" type="system" pointSize="17"/>
+                                            <connections>
+                                                <action selector="pushExerciseSelectionButton" destination="AgC-eL-Hgc" id="p5e-Sh-IlP"/>
+                                            </connections>
+                                        </button>
+                                    </items>
+                                </group>
+                            </items>
+                        </group>
+                    </items>
+                    <connections>
+                        <outlet property="lightExLabel" destination="eHv-5B-KUc" id="OCj-1m-o0a"/>
+                        <outlet property="mindfulLabel" destination="ZrF-xm-KAr" id="ZZp-7o-Cf8"/>
+                        <outlet property="ratioLabel" destination="184-ts-aG5" id="48y-hc-Exj"/>
+                        <outlet property="updatedLabel" destination="DcQ-NF-Xhn" id="WdP-Wy-3lN"/>
+                        <outlet property="workoutLabel" destination="AQ1-a7-2jk" id="JlC-Ed-ayY"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="-102" y="231"/>
+        </scene>
+        <!--SetWeightsInterfaceController-->
+        <scene sceneID="h9I-nL-E9O">
+            <objects>
+                <controller identifier="SetWeightsInterfaceController" id="F6g-kV-b1E" customClass="SetWeightsInterfaceController" customModule="urComp_WatchKit_Extension">
+                    <items>
+                        <picker height="2" alignment="left" id="2Cu-Yg-vWt">
+                            <connections>
+                                <action selector="pickerValueChanged:" destination="F6g-kV-b1E" id="bJc-xC-TMT"/>
+                            </connections>
+                        </picker>
+                        <group width="1" alignment="left" layout="vertical" id="Nu3-Pd-cI6">
+                            <items>
+                                <group width="1" alignment="left" layout="vertical" id="obX-kq-G3I">
+                                    <items>
+                                        <button width="1" height="20" alignment="left" title="Mindfulness" id="eEq-SN-FU0">
+                                            <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                            <color key="backgroundColor" red="0.084021218121051788" green="0.72070878744125366" blue="0.61130762100219727" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <fontDescription key="font" type="system" pointSize="17"/>
+                                            <connections>
+                                                <action selector="pushMindfulButton" destination="F6g-kV-b1E" id="dtn-JU-Za0"/>
+                                            </connections>
+                                        </button>
+                                        <label alignment="right" text="0 min = 33%" id="AIB-P2-FYc"/>
+                                    </items>
+                                </group>
+                                <group width="1" alignment="left" layout="vertical" id="Ni2-CK-zDs">
+                                    <items>
+                                        <button width="1" height="20" alignment="left" title="Exercise" id="ekW-tq-j13">
+                                            <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                            <color key="backgroundColor" red="0.025629090145230293" green="0.97403651475906372" blue="0.013990093022584915" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <fontDescription key="font" type="system" pointSize="17"/>
+                                            <connections>
+                                                <action selector="pushLightExButton" destination="F6g-kV-b1E" id="Cvn-lS-7Na"/>
+                                            </connections>
+                                        </button>
+                                        <label alignment="right" text="0 min = 33%" id="oSh-KM-P70"/>
+                                    </items>
+                                </group>
+                                <group width="1" alignment="left" layout="vertical" id="8AC-QV-8KA">
+                                    <items>
+                                        <button width="1" height="20" alignment="left" title="Workout" id="ITg-bV-IXz">
+                                            <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                            <color key="backgroundColor" red="0.95303875207901001" green="0.55487346649169922" blue="0.094032324850559235" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <fontDescription key="font" type="system" pointSize="17"/>
+                                            <connections>
+                                                <action selector="pushWorkoutButton" destination="F6g-kV-b1E" id="HNz-Rh-EqS"/>
+                                            </connections>
+                                        </button>
+                                        <label alignment="right" text="0 min = 33%" id="Klj-5Q-ZhS"/>
+                                    </items>
+                                </group>
+                                <group width="1" alignment="left" hidden="YES" id="iYK-oj-VcB">
+                                    <items>
+                                        <button width="0.33000000000000002" height="20" alignment="left" id="k4d-9W-Q1F">
+                                            <color key="backgroundColor" red="0.084302507340908051" green="0.7197263240814209" blue="0.61032158136367798" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <fontDescription key="font" type="system" pointSize="17"/>
+                                        </button>
+                                        <button width="0.33000000000000002" height="20" alignment="left" id="HJ0-vi-gYo">
+                                            <color key="backgroundColor" red="0.024634009227156639" green="0.97304683923721313" blue="0.014815728180110455" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <fontDescription key="font" type="system" pointSize="17"/>
+                                        </button>
+                                        <button width="0.33000000000000002" height="20" alignment="left" id="L9q-vo-r8H">
+                                            <color key="backgroundColor" red="0.95301610231399536" green="0.55686986446380615" blue="0.093618102371692657" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <fontDescription key="font" type="system" pointSize="17"/>
+                                        </button>
+                                    </items>
+                                </group>
+                                <group width="1" alignment="left" id="YYY-DK-kKF">
+                                    <items>
+                                        <label alignment="left" text="Weight Graph" id="cHA-I3-E7N">
+                                            <fontDescription key="font" style="UICTFontTextStyleHeadline"/>
+                                        </label>
+                                    </items>
+                                </group>
+                                <group width="1" alignment="left" id="B7W-Xw-Iqh">
+                                    <items>
+                                        <imageView width="0.33000000000000002" height="20" alignment="left" id="Xld-08-MKG"/>
+                                        <imageView width="0.33000000000000002" height="20" alignment="left" id="BED-3t-u6H"/>
+                                        <imageView width="0.33000000000000002" height="20" alignment="left" id="KjD-Qr-j0Y"/>
+                                    </items>
+                                </group>
+                                <button width="1" alignment="left" title="Set" id="EGj-bx-yFt">
+                                    <connections>
+                                        <action selector="pushSet" destination="F6g-kV-b1E" id="ayV-sp-nqn"/>
+                                    </connections>
+                                </button>
+                            </items>
+                        </group>
+                    </items>
+                    <connections>
+                        <outlet property="buttonGraphLightEx" destination="HJ0-vi-gYo" id="PjT-bp-5kg"/>
+                        <outlet property="buttonGraphMindful" destination="k4d-9W-Q1F" id="Pmg-g3-c7r"/>
+                        <outlet property="buttonGraphWorkout" destination="L9q-vo-r8H" id="gcq-le-LJs"/>
+                        <outlet property="imgLightEx" destination="BED-3t-u6H" id="vWl-H9-gQR"/>
+                        <outlet property="imgMindful" destination="Xld-08-MKG" id="ieO-HZ-5GB"/>
+                        <outlet property="imgWorkout" destination="KjD-Qr-j0Y" id="dor-Io-qF3"/>
+                        <outlet property="lightExLabel" destination="oSh-KM-P70" id="Stn-U3-GSS"/>
+                        <outlet property="mindfulLabel" destination="AIB-P2-FYc" id="o41-8b-CMM"/>
+                        <outlet property="picker" destination="2Cu-Yg-vWt" id="4T8-L7-sAt"/>
+                        <outlet property="workoutLabel" destination="Klj-5Q-ZhS" id="hQo-8s-RSd"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="-102" y="598"/>
+        </scene>
+        <!--Static Notification Interface Controller-->
+        <scene sceneID="AEw-b0-oYE">
+            <objects>
+                <notificationController id="YCC-NB-fut">
+                    <items>
+                        <label alignment="left" text="Alert Label" numberOfLines="0" id="IdU-wH-bcW"/>
+                    </items>
+                    <notificationCategory key="notificationCategory" identifier="myCategory" id="JfB-70-Muf"/>
+                    <connections>
+                        <outlet property="notificationAlertLabel" destination="IdU-wH-bcW" id="JKC-fr-R95"/>
+                        <segue destination="4sK-HA-Art" kind="relationship" relationship="dynamicNotificationInterface" id="kXh-Jw-8B1"/>
+                        <segue destination="eXb-UN-Cd0" kind="relationship" relationship="dynamicInteractiveNotificationInterface" id="mpB-YA-K8N"/>
+                    </connections>
+                </notificationController>
+            </objects>
+            <point key="canvasLocation" x="225" y="643"/>
+        </scene>
+        <!--Notification Controller-->
+        <scene sceneID="ZPc-GJ-vnh">
+            <objects>
+                <controller id="4sK-HA-Art" customClass="NotificationController" customModule="urComp_WatchKit_App" customModuleProvider="target"/>
+            </objects>
+            <point key="canvasLocation" x="468" y="643"/>
+        </scene>
+        <!--Notification Controller-->
+        <scene sceneID="Niz-AI-uX2">
+            <objects>
+                <controller id="eXb-UN-Cd0" customClass="NotificationController" customModule="urComp_WatchKit_App" customModuleProvider="target"/>
+            </objects>
+            <point key="canvasLocation" x="702" y="643"/>
+        </scene>
+        <!--SetGoalDurationController-->
+        <scene sceneID="KmC-gx-XNd">
+            <objects>
+                <controller identifier="SetGoalDurationController" id="4cV-z0-pAY" customClass="SetGoalDurationController" customModule="urComp_WatchKit_Extension">
+                    <items>
+                        <group width="1" height="1" alignment="left" layout="vertical" id="e57-jC-n1g">
+                            <items>
+                                <group width="1" alignment="left" layout="vertical" id="Bjd-IB-Hb2">
+                                    <items>
+                                        <label alignment="left" text="Mindfulness" id="u2A-2f-iR1">
+                                            <fontDescription key="font" style="UICTFontTextStyleHeadline"/>
+                                        </label>
+                                        <label alignment="left" text="Duration Setting" id="YXq-Nf-jrm"/>
+                                        <picker width="1" height="0.59999999999999998" alignment="left" id="BoP-GY-Zus">
+                                            <connections>
+                                                <action selector="pickerValueChanged:" destination="4cV-z0-pAY" id="YIS-OJ-byS"/>
+                                            </connections>
+                                        </picker>
+                                    </items>
+                                </group>
+                                <button width="1" alignment="left" title="Set" id="0qz-ap-Kvz">
+                                    <connections>
+                                        <action selector="pushSet" destination="4cV-z0-pAY" id="r7J-1B-zgM"/>
+                                    </connections>
+                                </button>
+                            </items>
+                        </group>
+                    </items>
+                    <connections>
+                        <outlet property="picker" destination="BoP-GY-Zus" id="MnP-bK-tK6"/>
+                        <outlet property="valueCategory" destination="u2A-2f-iR1" id="tzx-Jy-jO9"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="159" y="201"/>
+        </scene>
+        <!--WorkoutSelectController-->
+        <scene sceneID="PsM-8Y-jXL">
+            <objects>
+                <controller identifier="WorkoutSelectController" id="vsk-Nv-LWG" customClass="WorkoutSelectController" customModule="urComp_WatchKit_Extension">
+                    <items>
+                        <table alignment="left" id="9nk-3t-NtF">
+                            <items>
+                                <tableRow identifier="WorkoutTableRow" id="O0w-2H-i2v" customClass="WorkoutTableRow" customModule="urComp_WatchKit_Extension">
+                                    <group key="rootItem" width="1" alignment="left" id="LIS-I4-5b1">
+                                        <items>
+                                            <label alignment="center" verticalAlignment="center" id="136-ax-TRg">
+                                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                            </label>
+                                        </items>
+                                    </group>
+                                    <connections>
+                                        <outlet property="groupBox" destination="LIS-I4-5b1" id="kvY-8T-Fkj"/>
+                                        <outlet property="label" destination="136-ax-TRg" id="bdJ-3c-skz"/>
+                                    </connections>
+                                </tableRow>
+                            </items>
+                        </table>
+                        <button width="1" alignment="left" title="Set" id="1EI-8P-I9u">
+                            <fontDescription key="font" type="system" pointSize="18"/>
+                            <connections>
+                                <action selector="pushSet" destination="vsk-Nv-LWG" id="wkD-GI-C6X"/>
+                            </connections>
+                        </button>
+                    </items>
+                    <connections>
+                        <outlet property="table" destination="9nk-3t-NtF" id="DgY-QK-DDq"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="419" y="201"/>
+        </scene>
+    </scenes>
+</document>
